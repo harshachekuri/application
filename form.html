@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html forms</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h1>
+        Harsha Chekuri
+    </h1>
+    <form action="" method="">
+        <fieldset>
+            <legend>form</legend>
+            <label for="name">user name</label><br>
+            <input name="name" id="name" type="text" minlength="2" maxlength="20" required><br>
+    
+            <label for="pass">password</label><br>
+            <input name="pass" id="pass" type="password" required minlength="8" maxlength="100"><br>
+    
+            <label for="age">enter your age:</label><br>
+            <input name="age" id="age" type="number" min="1" max="120"><br>
+    
+            <label for="phn">enter mobile number:</label><br>
+            <input name="phn" id="phn" type="text" minlength="10" maxlength="12"><br>
+
+            <label for="level">confidence levels:</label><br>
+            <input type="range" name="level" id="level" min="0" max="5" value="0" oninput="this.nextElementSibling.value=this.value">
+            <output>0</output> <br>
+    
+            <label for="mail">enter email address:</label><br>
+            <input name="mail" id="mail" type="mail" required ><br>
+    
+            <label for="date">select the date:</label><br>
+            <input name="date" id="date" type="date" required><br>
+    
+            <label for="file">upload your resume:</label><br>
+            <input name="file" id="file" type="file" ><br>
+    
+            <label for="area">work field area:</label><br>
+            <input id="area" list="place">
+            <datalist id="place">
+                <option value="guntur">
+                <option value="vijayawada">
+                <option value="ongole">
+            </datalist><br>
+            
+            <label for="select">student type:</label><br>
+            <select id="select" name="select">
+                <option>day scholar</option>
+                <option>hostel</option>
+            </select><br>
+
+            <label for="gender" >gender:</label><br>
+            <input name="gender" type="radio" value ="male">
+            <label for="gender" >Male:</label><br>
+            <input name="gender" type="radio" value ="female">
+            <label for="gender" >Female:</label><br>
+            
+            <label for="lang">Languages Known:</label><br>
+            <input type="checkbox" name="lang" value="telugu">
+            <label for="lang" >telugu:</label><br>
+            <input type="checkbox" name="lang" value="hindi">
+            <label for="lang" >hindi:</label><br>
+            <input type="checkbox" name="lang" value="english">
+            <label for="lang" >english:</label><br>
+
+            <input name="sub" type="submit" ><br>
+
+        </fieldset>
+    </form>
+</body>
+</html>
